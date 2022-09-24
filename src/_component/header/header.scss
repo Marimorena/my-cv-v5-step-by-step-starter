@@ -1,6 +1,7 @@
+// mobile
 .header {
 
-  cursor: alias;
+  cursor: pointer;
 
   &__camasa {
     height: 40px;
@@ -17,9 +18,28 @@
     font-size: 24px;
     padding: 8px;
     line-height: 24px;
+    transition: 250ms;
 
     display: flex;
     justify-content: center;
 
 }
+}
+
+// tablet
+@media screen and (min-width: 1024px) {
+  .header {
+    &__title {
+      width: 768px;
+    }
+  }
+}
+
+// desktop
+@media screen and (min-width: 1440px) {
+  .header {
+    &__title {
+      width: 1200px;
+    }
+  }
 }
