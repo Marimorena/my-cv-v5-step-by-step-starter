@@ -1,0 +1,38 @@
+%refolosibil {
+  color: white;
+
+  border-radius: 20px;
+  height: 35px;
+  border: 0;
+  line-height: 19px;
+
+  padding: 8px 16px;
+  display: flex;
+  gap: 8px;
+
+}
+
+.buton {
+
+  &__normal {
+    &--rosu {
+      @extend %refolosibil;
+
+      background-color: #c62a08;
+    }
+    &--verde {
+      @extend %refolosibil;
+
+      background-color: #046b2d;
+    }
+  }
+}
+
+.nimic {
+  width: 16px;
+  height: 16px;
+  background: white;
+  border-radius: 50%;
+
+  display: flex;
+}
